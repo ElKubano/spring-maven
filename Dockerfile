@@ -3,7 +3,7 @@ FROM openjdk:17-jdk-slim
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /app
 # Copier le fichier jar généré dans le conteneur
-COPY target/docker-demo-0.0.1-SNAPSHOT.jar docker-demo.jar
+COPY target/demo.github-0.0.1-SNAPSHOT.jar docker-demo.jar
 # Exposer le port sur lequel Spring Boot écoute
 EXPOSE 8080
 # Commande pour lancer l'application Spring Boot
